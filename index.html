@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smoke Effect</title>
+<style>
+body {
+  background-color: black;
+  overflow: hidden;
+}
+.smoke {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url('smoke.png') repeat;
+  opacity: 0.5;
+  animation: smokeAnimation 20s linear infinite;
+}
+
+@keyframes smokeAnimation {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(1000px, -1000px) rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+  <div class="smoke"></div>
+</body>
+</html>
